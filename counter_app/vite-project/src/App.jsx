@@ -9,12 +9,16 @@ function App() {
 
   const handleAdd=()=>{
     counter=counter+1
-    setCounter(counter)
+    if(counter<=20){
+      setCounter(counter)
+    }
   }
 
   const handleRemove=()=>{
     counter=counter-1
-    setCounter(counter)
+    if(counter>=0){
+      setCounter(counter)
+    }
   }
   return (
     <>
